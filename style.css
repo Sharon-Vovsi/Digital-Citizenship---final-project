@@ -1,0 +1,48 @@
+.enemy {
+	background: var(--enemy-color, #e74c3c);
+}
+
+.box {
+	width: 200px;
+	padding: 24px;
+	border: 2px solid #222;
+	background: #fff;
+	text-align: center;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.enemy {
+	width: 32px;
+	height: 32px;
+	box-sizing: border-box;
+	position: fixed;
+	border: 2px solid #222;
+}
+
+.score {
+	position: fixed;
+	top: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	padding: 8px 14px;
+	font-weight: bold;
+}
+
+.game-message {
+	position: fixed;
+	top: 64px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.game-message[hidden] {
+	display: none;
+}
